@@ -1,0 +1,151 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header with image and overlay */
+header {
+  position: relative;
+  background: url('f4a03ed0-52df-48a3-9007-295547a40393.png') no-repeat center center;
+  background: url('starbucks-logo.png') no-repeat center center;
+  background-size: cover;
+  background-color: #00704A;
+  color: #fff;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Black transparent overlay */
+  z-index: 1;
+}
+
+header .overlay {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(0, 112, 74, 0.7);
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 5px 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+/* Main Content */
+.intro {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.intro button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #00704A;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.intro button:hover {
+  background-color: #005437;
+}
+
+.blog-post {
+  padding: 30px;
+  background: #fff;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.blog-post h3 {
+  color: #00704A;
+  margin-top: 20px;
+}
+
+.blog-post ul {
+  padding-left: 20px;
+}
+
+.conclusion {
+  margin-top: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.dashboard-section {
+  padding: 30px;
+  text-align: center;
+  background: #ffffff;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.dashboard-image {
+  width: 90%;
+  max-width: 800px;
+  border: 2px solid #00704A;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.contact {
+  padding: 30px;
+  background: #e2e2e2;
+  text-align: center;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Scroll Animations */
